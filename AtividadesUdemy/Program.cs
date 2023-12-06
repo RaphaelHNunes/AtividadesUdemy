@@ -8,7 +8,7 @@
 //Console.WriteLine(quartos);
 //Console.WriteLine(preco);
 
-//ToString e console.writeline são metodos 
+//ToString e console.writeline são metodos.
 
 Console.WriteLine("Entre com seu nome completo:");
 string nome = Console.ReadLine();
