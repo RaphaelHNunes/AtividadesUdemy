@@ -30,32 +30,45 @@
 //Console.WriteLine(altura);
 
 //---------------------------------------------------------------------------------------------------------------------------
-string r1 = "ControlId671";
-string r2 = "ControlId1510";
-string r3 = "Henry671";
-string r4 = "Henry1510";
-Console.WriteLine("Os relogios que oferecemos suporte são:");
-Console.WriteLine(r1);
-Console.WriteLine(r2);
-Console.WriteLine(r3);
-Console.WriteLine(r4);
 
-Console.WriteLine("\nEntre com o codigo de usuario: ");
-string[] ent = Console.ReadLine().Split(',');// nessa linha, a entrada do usuario foi armazenada em "ent"
-string col = ent[0]; //nas linhas abaixo, por causa do comando split oque foi armazenado foi entregue em linhas separadas 
-string col2 = ent[1];
-string col3 = ent[2];
-string col4 = ent[3];
-string col5 = ent[4];
-string col6 = ent[5];
-string col7 = ent[6];
-string col8 = ent[7];
+//string[] reps =
+//{
+//    "ControlId671",
+//     "ControlId1510",
+//     "Henry671",
+//     "Henry1510"
+//};
+//Console.WriteLine("Os relogios que oferecemos suporte são:");
+//for (int i = 0; i < reps.Length; i++)
+//{
+//    Console.WriteLine(reps[i]);
+//}
 
-Console.WriteLine("\nColaborador " + col);
-Console.WriteLine("Colaborador " + col2);
-Console.WriteLine("Colaborador " + col3);
-Console.WriteLine("Colaborador " + col4);
-Console.WriteLine("Colaborador " + col5);
-Console.WriteLine("Colaborador " + col6);
-Console.WriteLine("Colaborador " + col7);
-Console.WriteLine("Colaborador " + col8);
+//Console.WriteLine("\nEntre com o codigo de usuario: ");
+//string[] ent = Console.ReadLine().Split(',');// nessa linha, a entrada do usuario foi armazenada em "ent"
+
+//for (int j = 0; j < ent.Length; j++)
+//{
+//    Console.WriteLine(ent[j]);
+//}
+
+//----------------------------------------------------------------------------------------------------------------------------------
+
+Console.WriteLine("Entre com os relogios: ");
+string rep = Console.ReadLine();
+
+Console.WriteLine("\nEntre com códigos de usuarios: ");
+string colaboradores = Console.ReadLine();
+
+Console.WriteLine("\nInforme para qual relogio voce deseja enviar os colaboradores: ");
+if ()
+{
+    Console.WriteLine("\nRelogio ControlId671");
+    Console.WriteLine("\nColaboradores " + colaboradores);
+}
+
+else 
+{
+    Console.WriteLine("O sistema nao oferece suporte para esse sistema. ");
+
+}
