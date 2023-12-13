@@ -54,21 +54,24 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------
 
-Console.WriteLine("Entre com os relogios: ");
-string rep = Console.ReadLine();
+Console.WriteLine("\nEntre com os relogios: ");
+string[] reps = Console.ReadLine().Split(' ');
 
-Console.WriteLine("\nEntre com códigos de usuarios: ");
-string colaboradores = Console.ReadLine();
+Console.WriteLine("\nEntre com codigos de usuarios: ");
+int[] codigos = Console.ReadLine()
+    .Split(',')
+    .Select(int.Parse)
+    .ToArray();
 
 Console.WriteLine("\nInforme para qual relogio voce deseja enviar os colaboradores: ");
-if ()
+string relogio = Console.ReadLine();
+if (reps.Contains(relogio))
 {
-    Console.WriteLine("\nRelogio ControlId671");
-    Console.WriteLine("\nColaboradores " + colaboradores);
+    Console.WriteLine($"Relogio: {relogio}");
+    Console.WriteLine($"Colaboradore: {string.Join(",",codigos)}");
 }
 
-else 
+else
 {
-    Console.WriteLine("O sistema nao oferece suporte para esse sistema. ");
-
+    Console.WriteLine("Nao oferecemos suporte para esse relogio.");
 }
