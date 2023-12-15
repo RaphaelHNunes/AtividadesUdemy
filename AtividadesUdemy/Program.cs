@@ -54,6 +54,31 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------
 
+//Console.WriteLine("\nEntre com os relogios: ");
+//string[] reps = Console.ReadLine().Split(' ');
+
+//Console.WriteLine("\nEntre com codigos de usuarios: ");
+//int[] codigos = Console.ReadLine()
+//    .Split(',')
+//    .Select(int.Parse)
+//    .ToArray();
+
+//Console.WriteLine("\nInforme para qual relogio voce deseja enviar os colaboradores: ");
+//string relogio = Console.ReadLine();
+//if (reps.Contains(relogio))
+//{
+//    Console.WriteLine($"Relogio: {relogio}");
+//    Console.WriteLine($"Colaboradore: {string.Join(",", codigos)}");
+//}
+
+//else
+//{
+//    Console.WriteLine("Nao oferecemos suporte para esse relogio.");
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+
 Console.WriteLine("\nEntre com os relogios: ");
 string[] reps = Console.ReadLine().Split(' ');
 
@@ -65,13 +90,15 @@ int[] codigos = Console.ReadLine()
 
 Console.WriteLine("\nInforme para qual relogio voce deseja enviar os colaboradores: ");
 string relogio = Console.ReadLine();
-if (reps.Contains(relogio))
+bool check = relogio == reps[0];
+for (int i = 0;i < reps.Length; i++)
 {
-    Console.WriteLine($"Relogio: {relogio}");
-    Console.WriteLine($"Colaboradore: {string.Join(",",codigos)}");
+    if (reps[i] == relogio)
+    {
+        Console.WriteLine($"\nRelogio: {relogio}");
+        Console.WriteLine();
+    }
+
 }
 
-else
-{
-    Console.WriteLine("Nao oferecemos suporte para esse relogio.");
-}
+
